@@ -56,10 +56,11 @@ namespace Tarea
             int a = cboAConversor.SelectedIndex;
 
             double respuesta = cantidad * valores[tipo][a] / valores[tipo][de];
-            
-            lblRespuestaConversor= "Respuesta: " + respuesta.ToString("N2");
+            lblRespuestaConversor.Text = "Respuesta: " + respuesta.ToString("N2");
         }
 
+
+        
 
         private void cboTipoConversor_SelectedIndexChanged(object sender, EventArgs e)
         {
